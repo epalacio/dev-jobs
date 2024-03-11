@@ -3,17 +3,15 @@ import React from 'react';
 
 interface ButtonProps {
 	ctaText: string;
-	type?: string;
+	primaryType?: boolean;
 	fullWidth?: boolean;
 }
 
-const Button: React.FC<ButtonProps> = ({ ctaText, fullWidth, type = 'primary' }) => {
-	let style = `text-base border-2 border-violet rounded-md px-6 py-3 hover:bg-lightviolet hover:border-lightviolet font-bold ${
-		fullWidth ? 'w-full' : ''
-	} ${
-		type === 'primary'
+const Button: React.FC<ButtonProps> = ({ ctaText, fullWidth, primaryType = true }) => {
+	let style = `text-base border-2 rounded-md px-4 py-2 font-bold ${fullWidth ? 'w-full' : ''} ${
+		primaryType
 			? 'bg-violet border-violet hover:bg-lightviolet hover:border-lightviolet'
-			: 'bg-darkgray border-darkgray hover:bg-gray hover:border-gray'
+			: 'bg-darkgray border-darkgray hover:bg-gray hover:border-gray '
 	}`;
 
 	return (
