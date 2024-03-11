@@ -34,7 +34,7 @@ const CompanyBanner: React.FC<CompanyBannerProps> = ({
 					<h3 className='text-xl text-verydarkblue dark:text-white hover:text-gray py-1'>
 						{companyName}
 					</h3>
-					<p className=' pb-8 dark:text-darkgray md:pb-0'>{companyUrl}</p>
+					<p className=' pb-8 text-darkgray md:pb-0'>{companyUrl}</p>
 				</div>
 			</div>
 			<Button ctaText={'Company Site'} primaryType={false} />
