@@ -3,7 +3,7 @@ import React from 'react';
 
 interface ButtonProps {
 	ctaText: string;
-	type: string;
+	type?: string;
 	fullWidth?: boolean;
 }
 

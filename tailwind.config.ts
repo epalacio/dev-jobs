@@ -27,6 +27,9 @@ const config: Config = {
 			fontFamily: {
 				KumbhSans: ['KumbhSans', 'sans-serif'],
 			},
+			borderRadius: {
+				xl: '1rem',
+			},
 		},
 	},
 	plugins: [],
