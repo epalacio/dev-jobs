@@ -30,7 +30,7 @@ const CompanyBanner: React.FC<CompanyBannerProps> = ({
 						className='object-contain w-10 h-10 md:w-24 md:h-24'
 					/>
 				</div>
-				<div className='md:flex md:flex-col justify-center text-center md:text-left  md:pl-8'>
+				<div className='md:flex md:flex-col justify-center text-center md:text-left md:pl-8'>
 					<h3 className='text-xl text-verydarkblue dark:text-white hover:text-gray py-1'>
 						{companyName}
 					</h3>

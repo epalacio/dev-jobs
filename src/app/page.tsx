@@ -1,5 +1,6 @@
 import Button from '@/components/Button.client';
 import CompanyBanner from '@/components/CompanyBanner';
+import Footer from '@/components/Footer';
 import JobCard from '@/components/JobCard';
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
 			/>
 			<Button ctaText={'Load More'} />
 			<JobCard />
+			<Footer companyName={'Blogr'} jobTitle={'Senior Software Engineer'} />
 		</main>
 	);
 }
