@@ -18,7 +18,7 @@ const JobCard = () => {
 				5h ago <span className='font-bold text-xl'> . </span> Full Time
 			</p>
 			<Link href={''}>
-				<h3 className='text-xl text-verydarkblue dark: text-white hover:text-gray py-1'>
+				<h3 className='text-xl text-verydarkblue dark:text-white hover:text-gray py-1'>
 					Senior Software Engineer
 				</h3>
 			</Link>

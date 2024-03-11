@@ -16,7 +16,7 @@ const Footer: React.FC<FooterProps> = ({ companyName, jobTitle }) => {
 					<h3 className='text-xl text-verydarkblue dark:text-white hover:text-gray py-1'>
 						{jobTitle}
 					</h3>
-					<p className='text-lg dark:text-darkgray mt-2'>{companyName}</p>
+					<p className='text-lg text-darkgray mt-2'>{companyName}</p>
 				</div>
 			</div>
 			<Button ctaText={'Apply Now'} />
