@@ -7,6 +7,7 @@ import CompanyBanner from '@/components/CompanyBanner';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header.client';
 import JobCard from '@/components/JobCard';
+import SearchBar from '@/components/SearchBar';
 
 export default function Home() {
 	const [theme, setTheme] = useState('dark');
@@ -19,6 +20,7 @@ export default function Home() {
 		<main className={`${theme === 'dark' ? 'dark' : ''}`}>
 			<div className='flex flex-col grow items-center justify-between grow w-full bg-lightgray dark:bg-midnight'>
 				<Header onThemeToggle={toggleTheme} theme={theme} />
+				<SearchBar />
 				<CompanyBanner
 					imageBackgroundColor='hsl(36,87%,49%)'
 					imageUrl='/logos/blogr.svg'
