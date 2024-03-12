@@ -15,7 +15,7 @@ const SearchBar = () => {
 	};
 
 	return (
-		<div className='flex p-6 bg-white dark:bg-verydarkblue w-11/12 my-12 rounded-lg items-center justify-between'>
+		<div className='flex px-6 py-4 bg-white dark:bg-verydarkblue w-full my-12 rounded-lg items-center justify-between'>
 			<label htmlFor='title-input' className='flex items-center justify-start grow'>
 				<Image
 					src={`/icons/icon-search.svg`}
@@ -83,7 +83,7 @@ const SearchBar = () => {
 				<p className='font-bold text-md text-verydarkblue dark:text-white'>
 					Full Time Only
 				</p>
-				<Button ctaText={'Search'} />
+				<Button ctaText={'Search'} onClick={() => console.log('click')} />
 			</label>
 		</div>
 	);

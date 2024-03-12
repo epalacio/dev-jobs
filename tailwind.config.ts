@@ -7,6 +7,7 @@ const config: Config = {
 		'./src/app/**/*.{js,ts,jsx,tsx,mdx}',
 	],
 	darkMode: 'class',
+	safelist: ['bg-[**]'],
 	theme: {
 		fontSize: {
 			sm: ['14px', '18px'],

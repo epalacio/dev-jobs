@@ -21,7 +21,7 @@ const CompanyBanner: React.FC<CompanyBannerProps> = ({
 	return (
 		<div className='flex flex-col bg-white dark:bg-verydarkblue text-base rounded-md p-8 pl-6 relative w-11/12 my-12 md:flex-row md:items-center md:justify-between md:p-0 md:pr-8 md:rounded-tl-none'>
 			<div className='flex flex-col items-center md:flex-row'>
-				<div className={imageContainer}>
+				<div className={imageContainer} style={{ backgroundColor: imageBackgroundColor }}>
 					<Image
 						src={imageUrl}
 						alt={''}
