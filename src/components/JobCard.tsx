@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 interface JobCardProps {
+	companyId: number;
 	company: string;
 	logo: string;
 	logoBackground: string;
@@ -13,6 +14,7 @@ interface JobCardProps {
 }
 
 const JobCard: React.FC<JobCardProps> = ({
+	companyId,
 	company,
 	logo,
 	logoBackground,
@@ -38,7 +40,7 @@ const JobCard: React.FC<JobCardProps> = ({
 			<p>
 				{postedAt} <span className='font-bold text-xl'> . </span> {contract}
 			</p>
-			<Link href={''}>
+			<Link href={`/position/${companyId}`} passHref>
 				<h3 className='text-xl text-verydarkblue dark:text-white hover:text-gray dark:hover:text-gray py-1'>
 					{position}
 				</h3>

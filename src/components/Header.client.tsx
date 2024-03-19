@@ -1,14 +1,17 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 interface HeaderProps {
-	onThemeToggle: () => void;
-	theme: string;
+	onThemeToggle?: () => void;
+	theme?: string;
 }
 
 const Header: React.FC<HeaderProps> = ({ onThemeToggle, theme }) => {
 	return (
 		<div className='flex justify-between items-center w-full px-8 lg:px-16 pt-6 pb-16 md:rounded-bl-xl bg-cover bg-no-repeat bg-[center_top_-4rem] bg-[url("/images/mobile/bg-pattern-header.svg")] md:bg-[url("/images/tablet/bg-pattern-header.svg")] lg:bg-[url("/images/desktop/bg-pattern-header.svg")]'>
-			<h1 className='text-xl text-white mt-2'>devjobs</h1>
+			<Link href={`/`} passHref>
+				<h1 className='text-xl text-white mt-2'>devjobs</h1>
+			</Link>
 			<div className='flex items-center'>
 				<Image src={`/icons/icon-sun.svg`} width={18} height={18} alt={'sun logo'} />
 				<button

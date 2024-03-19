@@ -32,6 +32,9 @@ const config: Config = {
 			borderRadius: {
 				xl: '1rem',
 			},
+			padding: {
+				'70': '17.5rem',
+			},
 		},
 	},
 	plugins: [],

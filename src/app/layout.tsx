@@ -1,19 +1,25 @@
-import type { Metadata } from 'next';
+'use client';
+import { useState } from 'react';
 import './globals.css';
-
-export const metadata: Metadata = {
-	title: 'DevJobs',
-	description: 'A jobs board that pulls data from a local JSON file',
-};
+import Header from '@/components/Header.client';
 
 export default function RootLayout({
 	children,
 }: Readonly<{
 	children: React.ReactNode;
 }>) {
+	const [theme, setTheme] = useState('dark');
+	const toggleTheme = () => {
+		setTheme(theme === 'dark' ? 'light' : 'dark');
+	};
 	return (
 		<html lang='en'>
-			<body>{children}</body>
+			<body className={`${theme === 'dark' ? 'dark' : ''}`}>
+				<div className='bg-lightgray dark:bg-midnight'>
+					<Header onThemeToggle={toggleTheme} theme={theme} />
+				</div>
+				{children}
+			</body>
 		</html>
 	);
 }
