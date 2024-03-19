@@ -37,7 +37,11 @@ const CompanyBanner: React.FC<CompanyBannerProps> = ({
 					<p className=' pb-8 text-darkgray md:pb-0'>{companyUrl}</p>
 				</div>
 			</div>
-			<Button ctaText={'Company Site'} primaryType={false} />
+			<Button
+				ctaText={'Company Site'}
+				primaryType={false}
+				onClick={() => console.log('Clicked')}
+			/>
 		</div>
 	);
 };

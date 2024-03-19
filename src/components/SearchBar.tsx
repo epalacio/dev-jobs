@@ -1,3 +1,4 @@
+'use client';
 import { useState } from 'react';
 import Image from 'next/image';
 import Button from './Button.client';
@@ -52,8 +53,8 @@ const SearchBar = () => {
 			>
 				<Image
 					src={`/icons/icon-location.svg`}
-					width={14}
-					height={14}
+					width={17}
+					height={24}
 					alt={'location logo'}
 					className='object-contain'
 				/>
