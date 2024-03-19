@@ -3,8 +3,17 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Button from './Button.client';
 
-const SearchBar = () => {
-	const [filters, setFilters] = useState({ title: '', location: '', fullTime: false });
+interface Filters {
+	title: string;
+	location: string;
+	fullTime: boolean;
+}
+interface SearchBarProps {
+	onSearch: (filters: Filters) => void;
+}
+
+const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
+	const [filters, setFilters] = useState<Filters>({ title: '', location: '', fullTime: false });
 
 	const handleFilterChange = (e: any) => {
 		const { name, value, checked, type } = e.target;
@@ -15,6 +24,9 @@ const SearchBar = () => {
 		}));
 	};
 
+	const searchJobs = () => {
+		onSearch(filters);
+	};
 	return (
 		<div className='flex px-6 py-4 bg-white dark:bg-verydarkblue w-full my-12 rounded-lg items-center justify-between'>
 			<label htmlFor='title-input' className='flex items-center justify-start grow'>
@@ -84,7 +96,7 @@ const SearchBar = () => {
 				<p className='font-bold text-md text-verydarkblue dark:text-white'>
 					Full Time Only
 				</p>
-				<Button ctaText={'Search'} onClick={() => console.log('click')} />
+				<Button ctaText={'Search'} onClick={searchJobs} />
 			</label>
 		</div>
 	);
