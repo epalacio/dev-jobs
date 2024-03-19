@@ -11,10 +11,7 @@ This is a solution to the [Devjobs web app challenge on Frontend Mentor](https:/
 -   [My process](#my-process)
     -   [Built with](#built-with)
     -   [What I learned](#what-i-learned)
-    -   [Continued development](#continued-development)
-    -   [Useful resources](#useful-resources)
 -   [Author](#author)
--   [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -36,6 +33,8 @@ Users should be able to:
 
 -   Solution URL: [FEM Solution](https://www.frontendmentor.io/solutions/dev-jobs-reactnextjstailwindcss-Tz4Z7kV4GS)
 -   Live Site URL: [Vercel Live site](https://dev-jobs-mauve.vercel.app/)
+
+## My Process
 
 ### Built with
 
